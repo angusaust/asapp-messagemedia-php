@@ -213,4 +213,14 @@ class MMSoap {
         }
         return new StructConfirmReportListType($result);
     }
+
+    // Preserve legacy public service state without dynamic properties on PHP 8.2.
+    public $serviceCheck;
+    public $serviceGet;
+    public $serviceSend;
+    public $serviceBlock;
+    public $serviceUnblock;
+    public $serviceConfirm;
+    public $authentication;
+
 }
